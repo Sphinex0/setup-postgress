@@ -50,3 +50,8 @@ pg_ctl -D $HOME_DIR/pgdata -l logfile start
 # Create a database and connect
 createdb mydb
 psql mydb
+
+
+
+
+
