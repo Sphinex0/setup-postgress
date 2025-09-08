@@ -74,6 +74,9 @@ export PATH=$HOME_DIR/pg/bin:$PATH
 # Add PATH updates to ~/.zshrc for persistence
 echo 'export PATH=$HOME/m4/bin:$HOME/bison/bin:$HOME/flex/bin:$HOME/pg/bin:$PATH' >> ~/.zshrc
 
+#save
+source ~/.zshrc
+
 # Initialize and start PostgreSQL
 initdb -D $HOME_DIR/pgdata
 pg_ctl -D $HOME_DIR/pgdata -l logfile start
